@@ -322,46 +322,46 @@
 
         </section>
     </main>
-    <footer>
-        <section class="footer-section container">
-            <section class="address-section">
-                <a class="logo address-section__logo" href="index.html"><span class="logo_accent">Web</span>Studio</a>
-                <ul class="address">
-                    <li class="address-item">
+    <footer class="footer">
+        <section class="footer-content container">
+            <section class="address">
+                <a class="logo address__logo" href="index.html"><span class="logo_accent">Web</span>Studio</a>
+                <ul class="address-list address__address-list">
+                    <li class="address-list_item">
                         <address>
                             m. Warszawa, Aleje Jerozolimskie 21
                         </address>
                     </li>
-                    <li class="address-item">
-                        <a class="address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li class="address-list_item">
+                        <a class="link address-list_link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li class="address-item">
-                        <a class="address-tel" href="tel:+48111111111">+48 111 111 111</a>
+                        <a class="link address-list_link" href="tel:+48111111111">+48 111 111 111</a>
                     </li>
                 </ul>
             </section>
-            <div class="footer-social">
-                <p class="footer-social-title">dołącz do nas</p>
+            <div class="social footer__social">
+                <p class="social_title social_title--position">dołącz do nas</p>
                 <ul class="social-list">
-                    <li class="footer-social-item">
+                    <li class="social-list_item--position">
                         <a class="social-link social-list__social-link social-link--footer" href="">
                             <svg class="social-link_icon social-link_icon--footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg></a>
                     </li>
-                    <li class="footer-social-item">
+                    <li class="social-list_item--position">
                         <a class="social-link social-list__social-link social-link--footer" href="">
                             <svg class="social-link_icon social-link_icon--footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter">
                             </svg></a>
                     </li>
-                    <li class="footer-social-item">
+                    <li class="social-list_item--position">
                         <a class="social-link social-list__social-link social-link--footer" href="">
                             <svg class="social-link-icon social-link_icon--footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook">
                             </svg></a>
                     </li>
-                    <li class="footer-social-item">
+                    <li class="social-list_item--last">
                         <a class="social-link social-list__social-link social-link--footer" href="">
                             <svg class="social-link-icon social-link_icon--footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin">
@@ -369,13 +369,13 @@
                     </li>
                 </ul>
             </div>
-            <form class="footer-form">
-                <label class="footer-form-label">
+            <form class="newsletter footer__newsletter">
+                <label class="newsletter_label">
                     Zapisz się do newslettera
-                    <input class="footer-form-input" type="email" name="email" placeholder="E-mail" />
+                    <input class="newsletter_input newsletter_input--position" type="email" name="email" placeholder="E-mail" />
                 </label>
-                <button class="footer-form-button" type="submit">Zapisz się
-                    <svg class="footer-form-button-icon" width="24" height="24">
+                <button class="newsletter_button newsletter_button--position" type="submit">Zapisz się
+                    <svg class="newsletter_icon--right" width="24" height="24">
                         <use href="./images/icons.svg#icon-paperplane">
                         </use>
                     </svg>
@@ -385,44 +385,45 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-btn" data-modal-close><svg width="11" height="11" viewBox="0 0 11 11"
+            <button type="button" class="close-btn modal_close-btn" data-modal-close>
+                <svg class="modal_close-icon" width="11" height="11" viewBox="0 0 11 11"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
                         fill="black" />
                 </svg></button>
             <form class="form">
-                <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
-                <label for="name" class="form-label">
+                <p class="form_title form_title--position">Zostaw swoje dane w formularzu poniżej</p>
+                <label for="name" class="form_label form_label--position">
                     Imię
-                    <input class="form-input" type="text" name="name" id="name" />
-                    <svg class="form-input-icon" height="18" width="18">
+                    <input class="form_input form_input--position" type="text" name="name" id="name" />
+                    <svg class="form_icon" height="18" width="18">
                         <use href="./images/icons.svg#icon-username"></use>
                     </svg>
                 </label>
-                <label for="phone_number" class="form-label">
+                <label for="phone_number" class="form_label form_label--position">
                     Telefon
-                    <input class="form-input" type="tel" name="phone_number" id="phone_number" />
-                    <svg class="form-input-icon" height="18" width="18">
+                    <input class="form_input form_input--position" type="tel" name="phone_number" id="phone_number" />
+                    <svg class="form_icon" height="18" width="18">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </label>
-                <label for="email" class="form-label">
+                <label for="email" class="form_label form_label--position">
                     Email
-                    <input class="form-input" type="email" name="email" id="email" />
-                    <svg class="form-input-icon" height="18" width="18">
+                    <input class="form_input form_input--position" type="email" name="email" id="email" />
+                    <svg class="form_icon" height="18" width="18">
                         <use href="./images/icons.svg#icon-mail"></use>
                     </svg>
                 </label>
-                <label for="comment" class="form-label">
+                <label for="comment" class="form_label form_label--position">
                     Komentarz
-                    <textarea class="form-textarea" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+                    <textarea class="form_textarea form_textarea--position" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
                 </label>
-                <input class="checkbox-input visually-hidden" type="checkbox" name="approval" id="approval" />
-                <label for="approval" class="checkbox">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a
-                        href="">Politykę Prywatności</a>.
+                <input class="checkbox visually-hidden" type="checkbox" name="approval" id="approval" />
+                <label for="approval" class="checkbox_label checkbox_label--position">Oświadczam iż akceptuję <a class="checkbox_accent" href="">Regulamin</a> i <a
+                        class="checkbox_accent" href="">Politykę Prywatności</a>.
                 </label>
-                <button class="form-button" type="submit">Wyślij</button>
+                <button class="form_button form_button--position" type="submit">Wyślij</button>
             </form>
         </div>
     </div>
