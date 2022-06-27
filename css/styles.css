@@ -26,9 +26,14 @@
 }
 
 
-h2{
+.section_title{
     margin:0;
     padding:0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 figure{
@@ -284,11 +289,6 @@ button{
     background-color: #F5F4FA;
 }
 
-
-.feature-card_icon {
-    flex-grow:1;
-}
-
 .feature-card_icon--position{
     margin-top: 25px;
     margin-bottom:25px;
@@ -299,30 +299,28 @@ button{
 }
 
 .feature-description_name{
+    font-family:'Roboto';
+    font-style:normal;
+    font-size:14px;
     font-weight:700;
     line-height:1.14em;
     text-transform:uppercase; 
+    color:#212121;
+}
+
+.feature-description_name--position{
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
 .feature-description_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
     line-height:1.71;
-    color:#757575;
-}
-
-.services{
-    padding-top:0;
-}
-
-
-.section-title{
-    font-weight:700;
-    font-size:36px;
-    line-height:1.17;
-    text-align:center;
     letter-spacing:0.03em;
-    padding-bottom:50px;
+    color:#757575;
 }
 
 .services-list {
@@ -333,43 +331,56 @@ button{
     margin:0;
 }
 
-.services-item{
+.services-list_item--left,
+.services-list_item--middle{
     margin-right:30px;
+    margin-top:50px;
     margin-left:0;
     position:relative;
 }
 
-.services-item p{
+.services-list_item--right{
+    margin-top: 50px;
+    margin-left: 0;
+    position: relative;
+}
+
+.services-list_overlay{
+    font-family: 'Roboto';
+    font-style: normal;
     text-transform: uppercase;
     font-weight:700;
     font-size:14px;
     line-height:16px;
     text-align:center;
     letter-spacing:0.03em;
-    margin:0;
-    padding-top:27px;
     color: var(--light-color);
 }
 
-.services-box{
-    position:absolute;
-    top:224px;
-    left:0;
+ .services-list_overlay--position{
+    margin: 0;
+    padding-top: 27px;
+ }
+
+.services-list_box{
     width:100%;
     height:70px;
     background-color:rgba(47, 48, 58, 0.8);
 }
 
-.services-list:last-child{
-    margin-right:0;
+.services-list_box--position{
+    position: absolute;
+    top: 224px;
+    left: 0;
 }
+
 
 .team{
     background-color: #F5F4FA;
 }
 
 
-.team-photos{
+.team-list{
     display:flex;
     justify-content:space-between;
     list-style-type: none;
@@ -387,37 +398,32 @@ button{
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-right:30px;
-    margin-left:0px;
     
 }
 
-.team-photos-item:last-child{
+.team-list__team-card{
+    margin-top:50px;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+.team-card--last{
     margin-right:0;
 }
 
-.team-photo{
-    flex-grow:1;
-    max-width:270px;
-    min-width:270px;
-    height:260px;
-    margin-right:30px;
-
-}
-
-.team-name{
+.team-card_name{
     font-weight:500;
 }
 
-.team-name,
-.team-position{
+.team-card_name,
+.team-card_description{
     font-size:16px;
     line-height:1.19;
     text-align:center;
     letter-spacing:0.03em;
 }
 
-.team-position{
+.team-card_description{
     color:#757575;
 }
 
