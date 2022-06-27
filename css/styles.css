@@ -25,11 +25,6 @@
     background-color: var(--light-color);
 }
 
-ul{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-}
 
 h2{
     margin:0;
@@ -65,24 +60,31 @@ button{
     padding-top:32px;
 }
 
-.menu{
+.menu {
     display:flex;
     max-width:254px;
     height:48px;
     font-family: 'Roboto', 'Raleway', sans-serif;
     color: #212121;
     background-color: var(--light-color);
+    list-style-type:none;
 }
 
 .page-header__menu{
     margin-left: 0px;
-    padding-top: 32px;
     padding-bottom: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .menu_item--start,
 .menu_item--middle {
     padding-right: 46px;
+    padding-top: 32px;
+}
+
+.menu_item--end{
+    padding-top:32px;
 }
 
 
@@ -174,6 +176,7 @@ button{
     flex-wrap:nowrap;
     align-items:center;
     justify-content:center;
+    list-style-type: none;
 }
 
 .page-header__contact{
@@ -193,6 +196,12 @@ button{
     fill: var(--brand-color);
 }
 
+.section__banner{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
 .banner{
     background-color: var(--dark-background-color);
     display:flex;
@@ -201,9 +210,6 @@ button{
     height:600px;
     flex-basis:1600px;
     max-width:1600px;
-    margin-left:auto;
-    margin-right:auto;
-    padding-left:0;
     justify-content:center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/backphoto.jpg);
     background-size:cover;
@@ -211,7 +217,7 @@ button{
     background-position:center;
 }
 
-.title{
+.banner_title{
     font-size:44px;
     font-weight:900;
     line-height:1.36;
@@ -220,11 +226,9 @@ button{
     text-transform: uppercase;
     color: var(--light-color);
     max-width:696px;
-    margin:0;
-    padding-bottom:30px;
 }
 
-.banner-button{
+.banner_button{
     background-color:var(--brand-color);
     color: var(--light-color);
     font-weight:700;
@@ -246,21 +250,28 @@ button{
     display:flex;
     font-size:14px;
     letter-spacing: 0.03em;
+    list-style-type: none;
+    padding:0;
+    margin:0;
 }
 
-.feature-item{
+.feature-list_item{
     display:flex;
     flex-direction:column;
     min-width:270px;
     max-width:270px;
-    margin-right:30px;
-    margin-left:0;
     align-items:center;
     justify-content:center;
 }
+ .feature-list_item--left,
+ .feature-list_item--middle{
+    margin-right:30px;
+    margin-left:0;
+ }
 
-.feature-item:last-of-type{
+.feature-list_item--right{
     margin-right:0;
+    margin-left:0;
 }
 
 .feature-card{
@@ -274,17 +285,20 @@ button{
 }
 
 
-.feature-icon {
-    margin-top:25px;
-    margin-bottom:25px;
+.feature-card_icon {
     flex-grow:1;
 }
 
-.feature-card figcaption{
+.feature-card_icon--position{
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+
+.feature-card__feature-description{
     background-color: var(--light-color);
 }
 
-.feature-name{
+.feature-description_name{
     font-weight:700;
     line-height:1.14em;
     text-transform:uppercase; 
@@ -292,7 +306,7 @@ button{
     margin-bottom: 10px;
 }
 
-.feature-description{
+.feature-description_text{
     line-height:1.71;
     color:#757575;
 }
@@ -314,6 +328,9 @@ button{
 .services-list {
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+    padding:0;
+    margin:0;
 }
 
 .services-item{
@@ -355,6 +372,7 @@ button{
 .team-photos{
     display:flex;
     justify-content:space-between;
+    list-style-type: none;
 }
 
 
@@ -406,7 +424,9 @@ button{
 .team-social-list{
     display:flex;
     justify-content:center;
-    padding-bottom:30px;
+    list-style-type: none;
+    margin:0;
+    padding:0 0 30px 0;
 }
 
 .team-social-link{
@@ -438,6 +458,9 @@ button{
 
 .client-list{
     display:flex;
+    list-style-type: none;
+    padding:0;
+    margin:0;
 }
 
 .client-item{
@@ -504,6 +527,9 @@ footer{
     height:81px;
     display:flex;
     flex-direction:column;
+    list-style-type: none;
+    margin:0;
+    padding:0;
 }
 
 .address-item{
@@ -541,6 +567,9 @@ footer{
     justify-content: center;
     flex-direction:row;
     align-items:center;
+    list-style-type: none;
+    padding:0;
+    margin:0;
     
 }
 
@@ -647,6 +676,9 @@ footer{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
+    list-style-type: none;
+    padding:0;
+    margin:0;
 }
 
 .filters-item{
@@ -692,6 +724,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     justify-content:space-between;
     margin-left:0;
     margin-top:0px;
+    list-style-type: none;
 }
 
 .project-item{
