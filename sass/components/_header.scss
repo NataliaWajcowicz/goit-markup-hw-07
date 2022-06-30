@@ -1,0 +1,76 @@
+.menu-section {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header {
+    background-color: var(--light-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: #212121;
+}
+
+.page-header_nav {
+    padding-top: 32px;
+}
+
+.menu {
+    display: flex;
+    max-width: 254px;
+    height: 48px;
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: #212121;
+    background-color: var(--light-color);
+    list-style-type: none;
+}
+
+.page-header__menu {
+    margin-left: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_item--start,
+.menu_item--middle {
+    padding-right: 46px;
+    padding-top: 32px;
+}
+
+.menu_item--end {
+    padding-top: 32px;
+}
+
+
+.menu_link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: #212121;
+}
+
+.menu_link:hover,
+.menu_link:focus {
+    color: var(--brand-color);
+}
+
+.active {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    color: var(--brand-color);
+}
+
+.active::after {
+    content: "";
+    width: 51px;
+    position: absolute;
+    border-top: 4px solid var(--brand-color);
+    border-radius: 2px;
+    top: 40px;
+}
