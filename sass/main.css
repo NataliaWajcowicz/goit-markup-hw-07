@@ -886,9 +886,6 @@ button {
   margin: 0;
   position: relative;
 }
-.form_label:focus-within .form-icon {
-  fill: var(--brand-color);
-}
 .form_input, .form_textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -925,8 +922,20 @@ button {
 .form_icon {
   fill: #212121;
   position: absolute;
-  top: 29px;
   left: 52px;
+  top: 33px;
+  height: 13px;
+  width: 13px;
+}
+.form_icon--first {
+  height: 12px;
+  width: 12px;
+  top: 34px;
+}
+.form_icon--last {
+  height: 12px;
+  width: 15px;
+  top: 34px;
 }
 .form_button {
   font-family: "Roboto";
@@ -948,6 +957,10 @@ button {
 }
 .form_button--position {
   margin: 30px 164px 40px 164px;
+}
+
+.form_label:focus-within .form_icon {
+  fill: var(--brand-color);
 }
 
 .checkbox_accent {

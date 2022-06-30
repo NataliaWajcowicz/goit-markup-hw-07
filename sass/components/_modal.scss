@@ -52,6 +52,8 @@
 }
 
 
+
+
 .form {
     position: absolute;
     width: 528px;
@@ -97,9 +99,6 @@
             position: relative;
         }
 
-        &:focus-within .form-icon{
-            fill: var(--brand-color);
-        }
     }
 
     &_input,
@@ -116,6 +115,7 @@
             border-radius: 4px;
         }
     }
+
 
     &_input--position{
         margin-bottom: 10px;
@@ -148,8 +148,22 @@
     &_icon{
         fill: #212121;
         position: absolute;
-        top: 29px;
         left: 52px;
+        top: 33px;
+        height: 13px;
+        width: 13px;
+
+        &--first{
+            height: 12px;
+            width: 12px;
+            top: 34px;
+        }
+
+        &--last{
+            height: 12px;
+            width: 15px;
+            top: 34px;
+        }
     }
 
     &_button{
@@ -174,6 +188,10 @@
             margin: 30px 164px 40px 164px;
         }
     }
+}
+
+.form_label:focus-within .form_icon{
+    fill:var(--brand-color);
 }
 
 .checkbox{
