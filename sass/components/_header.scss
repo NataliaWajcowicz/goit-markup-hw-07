@@ -3,7 +3,7 @@
 }
 
 .page-header {
-    background-color: var(--light-color);
+    background-color:$indexBackgroundColor;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -25,7 +25,7 @@
     height: 48px;
     font-family: 'Roboto', 'Raleway', sans-serif;
     color: #212121;
-    background-color: var(--light-color);
+    background-color:$indexBackgroundColor;
     list-style-type: none;
 }
 
@@ -50,12 +50,12 @@
 .menu_link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
-    color: #212121;
+    color: $darkTextColor;
 }
 
 .menu_link:hover,
 .menu_link:focus {
-    color: var(--brand-color);
+    color: $brandColor;
 }
 
 .active {
@@ -63,14 +63,14 @@
     top: 0px;
     left: 0px;
     display: flex;
-    color: var(--brand-color);
+    color: $brandColor;
 }
 
 .active::after {
     content: "";
     width: 51px;
     position: absolute;
-    border-top: 4px solid var(--brand-color);
+    border-top: 4px solid $brandColor;
     border-radius: 2px;
     top: 40px;
 }

@@ -10,11 +10,11 @@
 
     &:hover,
     &:focus {
-        color: var(--brand-color);
+        color: $brandColor;
     }
 
     &_accent {
-        color: var(--brand-color);
+        color: $accentColor;
         }
 }
 
@@ -25,7 +25,7 @@
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
-    color: #212121;
+    color: $logoDarkColor;
     flex-basis: 145px;
 }
 
@@ -34,5 +34,5 @@
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 20px;
-    color: var(--light-color);
+    color: $logoLightColor;
 }

@@ -22,9 +22,9 @@
         font-style: normal;
         font-size: 16px;
         letter-spacing: 0.03em;
-        background-color: #F5F4FA;
+        background-color: $lightColor;
         border-radius: 4px;
-        color: #212121;
+        color: $darkTextColor;
         font-weight: 500;
         line-height: 1.62;
         align-items: center;
@@ -36,8 +36,8 @@
 
         &:hover,
         &:focus{
-            background-color: var(--brand-color);
-            color: var(--light-color);
+            background-color: $brandColor;
+            color: $lightTextColor;
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         }
     }
@@ -106,7 +106,7 @@
         font-size: 18px;
         line-height: 1.56;
         letter-spacing: 0.03em;
-        color: var(--light-color);
+        color: $lightTextColor;
         padding: 49px 45px 49px 24px;
     }
 }
@@ -115,7 +115,7 @@
 
 .project-description {
     border: 1px solid #EEEEEE;
-    background-color: var(--light-color);
+    background-color: $lightTextColor;
 
     &_name{
         font-family: 'Roboto';
@@ -124,7 +124,7 @@
         font-size: 18px;
         line-height: 36px;
         letter-spacing: 0.06em;
-        color: #212121;
+        color: $darkTextColor;
         margin-top: 0;
         margin-bottom: 4px;
     }
@@ -136,7 +136,7 @@
         font-size: 16px;
         letter-spacing: 0.03em;
         line-height: 1.88;
-        color: #757575;
+        color: $descriptionColor;
         margin: 0;
     }
 }

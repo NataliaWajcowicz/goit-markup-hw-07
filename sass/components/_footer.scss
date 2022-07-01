@@ -1,9 +1,9 @@
 .footer {
-    background-color: var(--dark-background-color);
+    background-color: $darkBackgroundColor;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--light-color);
+    color: $lightTextColor;
 }
 
 .footer-content {
@@ -38,7 +38,7 @@
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: $lightTextColor;
     }
 }
 

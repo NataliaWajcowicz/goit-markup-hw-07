@@ -1,5 +1,5 @@
 .link {
-    color: #757575;
+    color: $contactLinkColor;
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
@@ -9,12 +9,12 @@
 
     &:hover,
     &:focus {
-        color: var(--brand-color);
+        color: $brandColor;
     }
 
     &:hover .contact_icon,
     &:focus .contact_icon {
-        fill: var(--brand-color);
+        fill: $brandColor;
     }
 }
 
@@ -56,7 +56,7 @@
 
 .address-list__link,
 .address-list__link {
-    color: rgba(255, 255, 255, 0.6);
+    color: $contactLinkColor;
     display: block;
-    background-color: var(--dark-background-color);
+    background-color: $darkBackgroundColor;
 }

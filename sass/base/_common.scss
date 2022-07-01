@@ -1,8 +1,3 @@
-:root {
-    --brand-color: #2196F3;
-    --dark-background-color: #2F303A;
-    --light-color: #FFFFFF;
-}
 
 .body {
     position: relative;
@@ -18,6 +13,7 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    
     &_title{
         margin: 0;
         padding: 0;
@@ -29,14 +25,14 @@
         font-family: 'Roboto';
         font-style: normal;
         font-size: 36px;
-        color: #212121;
+        color: $darkTextColor;
     }
 }
 
 
 
 .portfolio-body {
-    background-color: var(--light-color);
+    background-color: $portfolioBackgroundColor;
 }
 
 

@@ -37,7 +37,7 @@
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    background-color: #F5F4FA;
+    background-color: $lightColor;
 
     &_icon--position {
         margin-top: 25px;
@@ -45,7 +45,7 @@
     }
 
     &__feature-description {
-        background-color: var(--light-color);
+        background-color: $indexBackgroundColor;
 
         &_name{
             font-family: 'Roboto';
@@ -54,7 +54,7 @@
             font-weight: 700;
             line-height: 1.14em;
             text-transform: uppercase;
-            color: #212121;
+            color: $darkTextColor;
         }
 
         &_name--position{
@@ -69,7 +69,7 @@
             font-weight: 400;
             line-height: 1.71;
             letter-spacing: 0.03em;
-            color: #757575;
+            color: $descriptionColor;
         }
     }
 

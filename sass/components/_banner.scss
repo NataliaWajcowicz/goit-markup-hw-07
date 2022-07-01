@@ -5,7 +5,7 @@
 }
 
 .banner {
-    background-color: var(--dark-background-color);
+    background-color:$darkBackgroundColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,13 +27,13 @@
             text-align: center;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            color: var(--light-color);
+            color: $lightTextColor;
             max-width: 696px;
         }
 
         &_button {
-            background-color: var(--brand-color);
-            color: var(--light-color);
+            background-color: $brandColor;
+            color: $lightTextColor;
             font-weight: 700;
             font-size: 16px;
             line-height: 1.88;
@@ -51,20 +51,3 @@
 
 }
 
-
-.banner_button {
-    background-color: var(--brand-color);
-    color: var(--light-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    width: 200px;
-    flex-basis: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    align-items: center;
-}
