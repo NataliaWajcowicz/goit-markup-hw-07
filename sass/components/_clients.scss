@@ -34,7 +34,7 @@
     &:focus{
         border: 1px solid $brandColor;
 
-        & .client-list__logo{
+        .client-list__logo{
             fill: $brandColor;
         }
     }
