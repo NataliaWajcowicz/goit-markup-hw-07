@@ -12,8 +12,8 @@
         color: $brandColor;
     }
 
-    &:hover .contact_icon,
-    &:focus .contact_icon {
+    &:hover .contact__icon,
+    &:focus .contact__icon {
         fill: $brandColor;
     }
 }
@@ -26,7 +26,7 @@
     list-style-type: none;
 }
 
-.contact_item{
+.contact__item{
     &--start{
         padding-right: 30px;
     }
@@ -37,7 +37,7 @@
 }
 
 
-.contact_icon {
+.contact__icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &--start,
