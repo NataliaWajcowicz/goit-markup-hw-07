@@ -31,7 +31,7 @@
         margin-right: 0;
     }
 
-    &__name{
+    &_name{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -42,7 +42,7 @@
         color: $darkTextColor;
     }
 
-    &__description{
+    &_description{
         color: $descriptionColor;
         font-family: 'Roboto';
         font-style: normal;

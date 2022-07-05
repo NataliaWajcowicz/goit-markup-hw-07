@@ -5,11 +5,11 @@
     margin: 0;
     padding: 0 0 30px 0;
 
-    &__item--position {
+    &_item--position {
             margin-right: 10px;
     }
 
-    &__item--last {
+    &_item--last {
         margin-right: 0px;
     }
     
@@ -28,7 +28,7 @@
         background-color: $lightTextColor;
     }
 
-    &__icon{
+    &_icon{
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &--team{
@@ -45,7 +45,7 @@
         background-color:$brandColor;
         fill: $lightTextColor;
 
-        & .social-link__icon--team{
+        & .social-link_icon--team{
             fill: $lightTextColor;
         }
     }
@@ -63,7 +63,7 @@
     flex-direction: column;
     padding-left:70px;
 
-    &__title{
+    &_title{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;

@@ -11,7 +11,7 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: transform, opacity, visibility;
 
-    &__close-icon{
+    &_close-icon{
         z-index: 2;
         cursor: pointer;
     }
@@ -63,7 +63,7 @@
     display: flex;
     flex-direction: column;
 
-    &__title{
+    &_title{
         text-align: center;
         color: $darkTextColor;
         font-family: 'Roboto';
@@ -81,7 +81,7 @@
         }
     }
 
-    &__label{
+    &_label{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -101,8 +101,8 @@
 
     }
 
-    &__input,
-    &__textarea{
+    &_input,
+    &_textarea{
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
 
@@ -117,7 +117,7 @@
     }
 
 
-    &__input--position{
+    &_input--position{
         margin-bottom: 10px;
         height: 40px;
         margin-top: 4px;
@@ -125,7 +125,7 @@
         padding-left: 42px;
     }
 
-    &__textarea{
+    &_textarea{
 
         &--position{
             height: 120px;
@@ -145,7 +145,7 @@
         }
     }
 
-    &__icon{
+    &_icon{
         fill: $darkTextColor;
         position: absolute;
         left: 52px;
@@ -166,7 +166,7 @@
         }
     }
 
-    &__button{
+    &_button{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -190,17 +190,17 @@
     }
 }
 
-.form__label:focus-within .form__icon{
+.form_label:focus-within .form_icon{
     fill:$brandColor;
 }
 
 .checkbox{
-    &__accent{
+    &_accent{
         text-decoration: underline;
         color: $brandColor;
     }
 
-    &__label{
+    &_label{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -227,7 +227,7 @@
         }
     }
 
-    &:checked+.checkbox__label::before{
+    &:checked+.checkbox_label::before{
         background-image: url(../images/checkbox.png);
         background-repeat: no-repeat;
         background-position: 50% 50%;

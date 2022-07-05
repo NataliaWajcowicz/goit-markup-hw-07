@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-.feature-list__item {
+.feature-list_item {
     display: flex;
     flex-direction: column;
     min-width: 270px;
@@ -39,7 +39,7 @@
     justify-content: center;
     background-color: $lightColor;
 
-    &__icon--position {
+    &_icon--position {
         margin-top: 25px;
         margin-bottom: 25px;
     }
@@ -47,7 +47,7 @@
     &__feature-description {
         background-color: $indexBackgroundColor;
 
-        &__name{
+        &_name{
             font-family: 'Roboto';
             font-style: normal;
             font-size: 14px;
@@ -57,12 +57,12 @@
             color: $darkTextColor;
         }
 
-        &__name--position{
+        &_name--position{
             margin-top: 30px;
             margin-bottom: 10px;
         }
 
-        &__text{
+        &_text{
             font-family: 'Roboto';
             font-style: normal;
             font-size: 14px;
