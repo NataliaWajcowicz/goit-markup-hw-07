@@ -1,9 +1,3 @@
-:root {
-  --brand-color: #2196F3;
-  --dark-background-color: #2F303A;
-  --light-color: #FFFFFF;
-}
-
 .body {
   position: relative;
 }
@@ -19,7 +13,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section_title {
+.section__title {
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -34,7 +28,7 @@
 }
 
 .portfolio-body {
-  background-color: var(--light-color);
+  background-color: #E5E5E5;
 }
 
 figure {
@@ -62,7 +56,7 @@ button {
 }
 
 .page-header {
-  background-color: var(--light-color);
+  background-color: #FFFFFF;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -74,7 +68,7 @@ button {
   color: #212121;
 }
 
-.page-header_nav {
+.page-header__nav {
   padding-top: 32px;
 }
 
@@ -84,7 +78,7 @@ button {
   height: 48px;
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
-  background-color: var(--light-color);
+  background-color: #FFFFFF;
   list-style-type: none;
 }
 
@@ -95,25 +89,25 @@ button {
   padding: 0;
 }
 
-.menu_item--start,
-.menu_item--middle {
+.menu__item--start,
+.menu__item--middle {
   padding-right: 46px;
   padding-top: 32px;
 }
 
-.menu_item--end {
+.menu__item--end {
   padding-top: 32px;
 }
 
-.menu_link {
+.menu__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   color: #212121;
 }
 
-.menu_link:hover,
-.menu_link:focus {
-  color: var(--brand-color);
+.menu__link:hover,
+.menu__link:focus {
+  color: #2196F3;
 }
 
 .active {
@@ -121,14 +115,14 @@ button {
   top: 0px;
   left: 0px;
   display: flex;
-  color: var(--brand-color);
+  color: #2196F3;
 }
 
 .active::after {
   content: "";
   width: 51px;
   position: absolute;
-  border-top: 4px solid var(--brand-color);
+  border-top: 4px solid #2196F3;
   border-radius: 2px;
   top: 40px;
 }
@@ -144,10 +138,10 @@ button {
   text-decoration: none;
 }
 .logo:hover, .logo:focus {
-  color: var(--brand-color);
+  color: #2196F3;
 }
-.logo_accent {
-  color: var(--brand-color);
+.logo__accent {
+  color: #2196F3;
 }
 
 .page-header__logo {
@@ -157,7 +151,7 @@ button {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  color: #212121;
+  color: #000000;
   flex-basis: 145px;
 }
 
@@ -166,7 +160,7 @@ button {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 20px;
-  color: var(--light-color);
+  color: #FFFFFF;
 }
 
 .link {
@@ -176,13 +170,13 @@ button {
   flex-wrap: nowrap;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Roboto", "Raleway", sans-serif;
-  background-color: var(--light-color);
+  background-color: #FFFFFF;
 }
 .link:hover, .link:focus {
-  color: var(--brand-color);
+  color: #2196F3;
 }
-.link:hover .contact_icon, .link:focus .contact_icon {
-  fill: var(--brand-color);
+.link:hover .contact__icon, .link:focus .contact__icon {
+  fill: #2196F3;
 }
 
 .contact {
@@ -193,17 +187,17 @@ button {
   list-style-type: none;
 }
 
-.contact_item--start {
+.contact__item--start {
   padding-right: 30px;
 }
-.contact_item--end {
+.contact__item--end {
   padding-right: 0px;
 }
 
-.contact_icon {
+.contact__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact_icon--start, .contact_icon--end {
+.contact__icon--start, .contact__icon--end {
   margin-right: 10px;
 }
 
@@ -218,7 +212,7 @@ button {
 .address-list__link {
   color: rgba(255, 255, 255, 0.6);
   display: block;
-  background-color: var(--dark-background-color);
+  background-color: #2F303A;
 }
 
 .section__banner {
@@ -228,7 +222,7 @@ button {
 }
 
 .banner {
-  background-color: var(--dark-background-color);
+  background-color: #2F303A;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,7 +235,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
-.banner_title {
+.banner__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -250,29 +244,12 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--light-color);
+  color: #FFFFFF;
   max-width: 696px;
 }
-.banner_button {
-  background-color: var(--brand-color);
-  color: var(--light-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  width: 200px;
-  flex-basis: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  align-items: center;
-}
-
-.banner_button {
-  background-color: var(--brand-color);
-  color: var(--light-color);
+.banner__button {
+  background-color: #2196F3;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -296,7 +273,7 @@ button {
   margin: 0;
 }
 
-.feature-list_item {
+.feature-list__item {
   display: flex;
   flex-direction: column;
   min-width: 270px;
@@ -304,11 +281,11 @@ button {
   align-items: center;
   justify-content: center;
 }
-.feature-list_item--left, .feature-list_item--middle {
+.feature-list__item--left, .feature-list__item--middle {
   margin-right: 30px;
   margin-left: 0;
 }
-.feature-list_item--right {
+.feature-list__item--right {
   margin-right: 0;
   margin-left: 0;
 }
@@ -322,14 +299,14 @@ button {
   justify-content: center;
   background-color: #F5F4FA;
 }
-.feature-card_icon--position {
+.feature-card__icon--position {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 .feature-card__feature-description {
-  background-color: var(--light-color);
+  background-color: #FFFFFF;
 }
-.feature-card__feature-description_name {
+.feature-card__feature-description__name {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -338,11 +315,11 @@ button {
   text-transform: uppercase;
   color: #212121;
 }
-.feature-card__feature-description_name--position {
+.feature-card__feature-description__name--position {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.feature-card__feature-description_text {
+.feature-card__feature-description__text {
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -359,18 +336,18 @@ button {
   padding: 0;
   margin: 0;
 }
-.services-list_item--left, .services-list_item--middle {
+.services-list__item--left, .services-list__item--middle {
   margin-right: 30px;
   margin-top: 50px;
   margin-left: 0;
   position: relative;
 }
-.services-list_item--right {
+.services-list__item--right {
   margin-top: 50px;
   margin-left: 0;
   position: relative;
 }
-.services-list_overlay {
+.services-list__overlay {
   font-family: "Roboto";
   font-style: normal;
   text-transform: uppercase;
@@ -379,18 +356,18 @@ button {
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--light-color);
+  color: #FFFFFF;
 }
-.services-list_overlay--position {
+.services-list__overlay--position {
   margin: 0;
   padding-top: 27px;
 }
-.services-list_box {
+.services-list__box {
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.services-list_box--position {
+.services-list__box--position {
   position: absolute;
   top: 224px;
   left: 0;
@@ -418,14 +395,14 @@ button {
   flex-basis: 260px;
   width: 270px;
   align-items: space-between;
-  background-color: var(--light-color);
+  background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-card--last {
   margin-right: 0;
 }
-.team-card_name {
+.team-card__name {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -435,7 +412,7 @@ button {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.team-card_description {
+.team-card__description {
   color: #757575;
   font-family: "Roboto";
   font-style: normal;
@@ -453,10 +430,10 @@ button {
   margin: 0;
   padding: 0 0 30px 0;
 }
-.social-list_item--position {
+.social-list__item--position {
   margin-right: 10px;
 }
-.social-list_item--last {
+.social-list__item--last {
   margin-right: 0px;
 }
 
@@ -470,23 +447,23 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link--team {
-  background-color: var(--light-color);
+  background-color: #FFFFFF;
 }
-.social-link_icon {
+.social-link__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link_icon--team {
+.social-link__icon--team {
   fill: #757575;
 }
-.social-link_icon--footer {
-  fill: var(--light-color);
+.social-link__icon--footer {
+  fill: #FFFFFF;
 }
 .social-link:hover, .social-link:focus {
-  background-color: var(--brand-color);
-  fill: var(--light-color);
+  background-color: #2196F3;
+  fill: #FFFFFF;
 }
-.social-link:hover .social-link_icon--team, .social-link:focus .social-link_icon--team {
-  fill: var(--light-color);
+.social-link:hover .social-link__icon--team, .social-link:focus .social-link__icon--team {
+  fill: #FFFFFF;
 }
 .social-link--footer {
   background-color: rgba(255, 255, 255, 0.1);
@@ -497,7 +474,7 @@ button {
   flex-direction: column;
   padding-left: 70px;
 }
-.social_title {
+.social__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -507,7 +484,7 @@ button {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.social_title--position {
+.social__title--position {
   margin-top: 0;
 }
 
@@ -517,12 +494,12 @@ button {
   padding: 0;
   margin: 0;
 }
-.client-list_logo {
+.client-list__logo {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-list_item {
+.client-list__item {
   display: flex;
   width: 170px;
   height: 92px;
@@ -532,27 +509,27 @@ button {
   justify-content: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-list_item--position {
+.client-list__item--position {
   margin-top: 50px;
   margin-right: 30px;
 }
-.client-list_item--position-last {
+.client-list__item--position-last {
   margin-top: 50px;
   margin-right: 0;
 }
-.client-list_item:hover, .client-list_item:focus {
-  border: 1px solid var(--brand-color);
+.client-list__item:hover, .client-list__item:focus {
+  border: 1px solid #2196F3;
 }
-.client-list_item:hover .client-list_logo, .client-list_item:focus .client-list_logo {
-  fill: var(--brand-color);
+.client-list__item:hover .client-list__logo, .client-list__item:focus .client-list__logo {
+  fill: #2196F3;
 }
 
 .footer {
-  background-color: var(--dark-background-color);
+  background-color: #2F303A;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--light-color);
+  color: #FFFFFF;
 }
 
 .footer-content {
@@ -577,7 +554,7 @@ button {
   margin: 0;
   padding: 0;
 }
-.address-list_item {
+.address-list__item {
   margin-bottom: 9px;
   display: inline-block;
   font-family: "Roboto";
@@ -596,7 +573,7 @@ button {
 .newsletter {
   display: flex;
 }
-.newsletter_label {
+.newsletter__label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -604,11 +581,11 @@ button {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--light-color);
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
 }
-.newsletter_input {
+.newsletter__input {
   width: 358px;
   height: 50px;
   background-color: inherit;
@@ -616,12 +593,12 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.newsletter_input--position {
+.newsletter__input--position {
   margin-right: 12px;
   margin-top: 20px;
   padding: 15px 295px 15px 16px;
 }
-.newsletter_input:placeholder {
+.newsletter__input:placeholder {
   font-family: "Roboto";
   font-style: normal;
   display: flex;
@@ -633,7 +610,7 @@ button {
   line-height: 20px;
   letter-spacing: 0.03em;
 }
-.newsletter_button {
+.newsletter__button {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -647,14 +624,14 @@ button {
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--light-color);
+  color: #FFFFFF;
   cursor: pointer;
 }
-.newsletter_button--position {
+.newsletter__button--position {
   margin-top: 34px;
   padding: 10px 24px 10px 42px;
 }
-.newsletter_icon--right {
+.newsletter__icon--right {
   margin-left: 24px;
 }
 
@@ -665,17 +642,17 @@ button {
   justify-content: center;
   list-style-type: none;
 }
-.filters_item--position {
+.filters__item--position {
   margin-right: 8px;
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 34px;
 }
-.filters_item--last {
+.filters__item--last {
   margin: 0;
   margin-bottom: 34px;
 }
-.filters_button {
+.filters__button {
   font-family: "Roboto";
   font-style: normal;
   font-size: 16px;
@@ -692,9 +669,9 @@ button {
   height: 38px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filters_button:hover, .filters_button:focus {
-  background-color: var(--brand-color);
-  color: var(--light-color);
+.filters__button:hover, .filters__button:focus {
+  background-color: #2196F3;
+  color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -711,14 +688,14 @@ button {
   list-style-type: none;
   padding: 0;
 }
-.project-list_item {
+.project-list__item {
   margin-left: 0;
   margin-top: 0px;
 }
-.project-list_item--first-row {
+.project-list__item--first-row {
   margin-bottom: 30px;
 }
-.project-list_item--last-row {
+.project-list__item--last-row {
   margin-top: 30px;
 }
 
@@ -736,7 +713,7 @@ button {
   padding: 20px 24px;
   z-index: 2;
 }
-.project-card_overlay {
+.project-card__overlay {
   font-family: "Roboto";
   font-style: normal;
   position: absolute;
@@ -752,15 +729,15 @@ button {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--light-color);
+  color: #FFFFFF;
   padding: 49px 45px 49px 24px;
 }
 
 .project-description {
   border: 1px solid #EEEEEE;
-  background-color: var(--light-color);
+  background-color: #FFFFFF;
 }
-.project-description_name {
+.project-description__name {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -771,7 +748,7 @@ button {
   margin-top: 0;
   margin-bottom: 4px;
 }
-.project-description_text {
+.project-description__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -791,7 +768,7 @@ button {
   overflow: hidden;
   z-index: 1;
 }
-.box:hover .project-card_overlay {
+.box:hover .project-card__overlay {
   transform: translateY(0%);
 }
 
@@ -802,13 +779,13 @@ button {
   left: 50%;
   top: 221px;
   transform: translateX(-50%);
-  background: var(--light-color);
+  background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform, opacity, visibility;
 }
-.modal_close-icon {
+.modal__close-icon {
   z-index: 2;
   cursor: pointer;
 }
@@ -853,7 +830,7 @@ button {
   display: flex;
   flex-direction: column;
 }
-.form_title {
+.form__title {
   text-align: center;
   color: #212121;
   font-family: "Roboto";
@@ -864,12 +841,12 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.form_title--position {
+.form__title--position {
   padding-top: 40px;
   margin: 0 auto;
   padding-bottom: 12px;
 }
-.form_label {
+.form__label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -881,36 +858,36 @@ button {
   flex-direction: column;
   text-transform: capitalize;
 }
-.form_label--position {
+.form__label--position {
   padding-left: 40px;
   margin: 0;
   position: relative;
 }
-.form_input, .form_textarea {
+.form__input, .form__textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form_input:focus, .form_textarea:focus {
+.form__input:focus, .form__textarea:focus {
   outline: none;
 }
-.form_input:focus-within, .form_textarea:focus-within {
-  border: 1px solid var(--brand-color);
+.form__input:focus-within, .form__textarea:focus-within {
+  border: 1px solid #2196F3;
   border-radius: 4px;
 }
-.form_input--position {
+.form__input--position {
   margin-bottom: 10px;
   height: 40px;
   margin-top: 4px;
   margin-right: 40px;
   padding-left: 42px;
 }
-.form_textarea--position {
+.form__textarea--position {
   height: 120px;
   padding: 16px 12px;
   margin-top: 4px;
   margin-right: 40px;
 }
-.form_textarea:placeholder {
+.form__textarea:placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -919,7 +896,7 @@ button {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form_icon {
+.form__icon {
   fill: #212121;
   position: absolute;
   left: 52px;
@@ -927,17 +904,17 @@ button {
   height: 13px;
   width: 13px;
 }
-.form_icon--first {
+.form__icon--first {
   height: 12px;
   width: 12px;
   top: 34px;
 }
-.form_icon--last {
+.form__icon--last {
   height: 12px;
   width: 15px;
   top: 34px;
 }
-.form_button {
+.form__button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -948,26 +925,26 @@ button {
   justify-content: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  background: var(--brand-color);
+  background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
   height: 50px;
   cursor: pointer;
 }
-.form_button--position {
+.form__button--position {
   margin: 30px 164px 40px 164px;
 }
 
-.form_label:focus-within .form_icon {
-  fill: var(--brand-color);
+.form__label:focus-within .form__icon {
+  fill: #2196F3;
 }
 
-.checkbox_accent {
+.checkbox__accent {
   text-decoration: underline;
-  color: var(--brand-color);
+  color: #2196F3;
 }
-.checkbox_label {
+.checkbox__label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -978,12 +955,12 @@ button {
   position: relative;
   cursor: pointer;
 }
-.checkbox_label--position {
+.checkbox__label--position {
   padding-left: 55px;
   padding-right: 54px;
   padding-top: 20px;
 }
-.checkbox_label::before {
+.checkbox__label::before {
   content: "";
   display: inline-block;
   height: 16px;
@@ -991,10 +968,10 @@ button {
   outline: 1px solid #212121;
   margin-right: 8px;
 }
-.checkbox:checked + .checkbox_label::before {
+.checkbox:checked + .checkbox__label::before {
   background-image: url(../images/checkbox.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-color: var(--brand-color);
+  background-color: #2196F3;
   outline: none;
 }/*# sourceMappingURL=main.css.map */

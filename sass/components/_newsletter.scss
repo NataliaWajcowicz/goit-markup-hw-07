@@ -5,7 +5,7 @@
 .newsletter {
     display: flex;
 
-    &_label{
+    &__label{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -18,7 +18,7 @@
         flex-direction: column;
     }
 
-    &_input{
+    &__input{
         width: 358px;
         height: 50px;
         background-color: inherit;
@@ -46,7 +46,7 @@
         }
     }
 
-    &_button{
+    &__button{
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
@@ -69,7 +69,7 @@
         }
     }
 
-    &_icon--right{
+    &__icon--right{
         margin-left: 24px;
     }
 }

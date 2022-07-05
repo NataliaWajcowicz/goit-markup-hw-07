@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    &_title {
+    &__title {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
@@ -31,7 +31,7 @@
             max-width: 696px;
         }
 
-        &_button {
+        &__button {
             background-color: $brandColor;
             color: $lightTextColor;
             font-weight: 700;

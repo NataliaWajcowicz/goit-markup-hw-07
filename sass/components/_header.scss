@@ -12,10 +12,10 @@
     align-items: baseline;
     justify-content: center;
     font-family: 'Roboto', 'Raleway', sans-serif;
-    color: #212121;
+    color: $darkTextColor;
 }
 
-.page-header_nav {
+.page-header__nav {
     padding-top: 32px;
 }
 
@@ -24,7 +24,7 @@
     max-width: 254px;
     height: 48px;
     font-family: 'Roboto', 'Raleway', sans-serif;
-    color: #212121;
+    color: $darkTextColor;
     background-color:$indexBackgroundColor;
     list-style-type: none;
 }
@@ -36,25 +36,25 @@
     padding: 0;
 }
 
-.menu_item--start,
-.menu_item--middle {
+.menu__item--start,
+.menu__item--middle {
     padding-right: 46px;
     padding-top: 32px;
 }
 
-.menu_item--end {
+.menu__item--end {
     padding-top: 32px;
 }
 
 
-.menu_link {
+.menu__link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
     color: $darkTextColor;
 }
 
-.menu_link:hover,
-.menu_link:focus {
+.menu__link:hover,
+.menu__link:focus {
     color: $brandColor;
 }
 
