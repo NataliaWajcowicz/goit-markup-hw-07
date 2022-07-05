@@ -36,10 +36,6 @@ figure {
   padding: 0;
 }
 
-button {
-  border: 0px;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -49,6 +45,45 @@ button {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2196F3;
+  color: #F5F4FA;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 0px;
+}
+.button--with-icon-right {
+  display: flex;
+  margin-top: 34px;
+  padding: 10px 24px 10px 42px;
+}
+.button--small {
+  font-weight: 500;
+  background-color: #F5F4FA;
+  color: #212121;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  width: 121px;
+  height: 38px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--small:hover, .button--small:focus {
+  background-color: #2196F3;
+  color: #FFFFFF;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .menu-section {
@@ -246,22 +281,6 @@ button {
   text-transform: uppercase;
   color: #FFFFFF;
   max-width: 696px;
-}
-.banner__button {
-  background-color: #2196F3;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  width: 200px;
-  flex-basis: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  align-items: center;
 }
 
 .feature-list {
@@ -610,27 +629,6 @@ button {
   line-height: 20px;
   letter-spacing: 0.03em;
 }
-.newsletter__button {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-.newsletter__button--position {
-  margin-top: 34px;
-  padding: 10px 24px 10px 42px;
-}
 .newsletter__icon--right {
   margin-left: 24px;
 }
@@ -651,28 +649,6 @@ button {
 .filters__item--last {
   margin: 0;
   margin-bottom: 34px;
-}
-.filters__button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  color: #212121;
-  font-weight: 500;
-  line-height: 1.62;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  width: 121px;
-  height: 38px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.filters__button:hover, .filters__button:focus {
-  background-color: #2196F3;
-  color: #FFFFFF;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project__filters {
@@ -913,24 +889,6 @@ button {
   height: 12px;
   width: 15px;
   top: 34px;
-}
-.form__button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
 }
 .form__button--position {
   margin: 30px 164px 40px 164px;
