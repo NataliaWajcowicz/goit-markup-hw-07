@@ -99,6 +99,10 @@
             position: relative;
         }
 
+        &:focus-within .form__icon {
+            fill: $brandColor;
+        }
+
     }
 
     &__input,
@@ -117,12 +121,15 @@
     }
 
 
-    &__input--position{
-        margin-bottom: 10px;
-        height: 40px;
-        margin-top: 4px;
-        margin-right: 40px;
-        padding-left: 42px;
+    &__input{
+    
+        &--position{
+            margin-bottom: 10px;
+            height: 40px;
+            margin-top: 4px;
+            margin-right: 40px;
+            padding-left: 42px;
+        }
     }
 
     &__textarea{
@@ -166,14 +173,13 @@
         }
     }
 
-    &__button--position {
-        margin: 30px 164px 40px 164px;
+    &__button{
+        
+        &--position {
+            margin: 30px 164px 40px 164px;
+        }
     }
 
-}
-
-.form__label:focus-within .form__icon{
-    fill:$brandColor;
 }
 
 .checkbox{

@@ -102,9 +102,14 @@ figure {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
 }
-
 .page-header__nav {
   padding-top: 32px;
+}
+.page-header__menu {
+  margin-left: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu {
@@ -117,19 +122,10 @@ figure {
   list-style-type: none;
 }
 
-.page-header__menu {
-  margin-left: 0px;
-  padding-bottom: 0px;
-  margin: 0;
-  padding: 0;
-}
-
-.menu__item--start,
-.menu__item--middle {
+.menu__item--start, .menu__item--middle {
   padding-right: 46px;
   padding-top: 32px;
 }
-
 .menu__item--end {
   padding-top: 32px;
 }
@@ -139,9 +135,7 @@ figure {
   text-decoration: none;
   color: #212121;
 }
-
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: #2196F3;
 }
 
@@ -152,7 +146,6 @@ figure {
   display: flex;
   color: #2196F3;
 }
-
 .active::after {
   content: "";
   width: 51px;
@@ -291,7 +284,6 @@ figure {
   padding: 0;
   margin: 0;
 }
-
 .feature-list__item {
   display: flex;
   flex-direction: column;
@@ -401,7 +393,6 @@ figure {
   justify-content: space-between;
   list-style-type: none;
 }
-
 .team-list__team-card {
   margin-top: 50px;
   margin-right: 30px;
@@ -839,6 +830,9 @@ figure {
   margin: 0;
   position: relative;
 }
+.form__label:focus-within .form__icon {
+  fill: #2196F3;
+}
 .form__input, .form__textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -892,10 +886,6 @@ figure {
 }
 .form__button--position {
   margin: 30px 164px 40px 164px;
-}
-
-.form__label:focus-within .form__icon {
-  fill: #2196F3;
 }
 
 .checkbox__accent {

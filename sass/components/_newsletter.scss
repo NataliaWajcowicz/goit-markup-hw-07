@@ -46,8 +46,11 @@
         }
     }
 
-    &__icon--right{
-        margin-left: 24px;
+    &__icon{
+    
+        &--right{
+            margin-left: 24px;
+        }
     }
 }
 
